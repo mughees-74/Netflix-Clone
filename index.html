@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="signin"><a href="SignUp.html">Sign In</a></div>
+        </div>
+        <div class="bg">
+            <img src="img/bg.jpg" alt="">  
+            <div class="bg-content">
+                <h1 class="heading">Unlimited movies, TV shows, and more</h1>
+            <div class="heading-content">
+                <p>Starts at Rs 250. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership</p>
+            </div>
+            <div class="search-btn">
+                <input type="text" placeholder="Email Address">
+                <a href="home.html" class="homescenes"><button>Get Started ></button></a>
+            </div>
+            </div>
+        </div>
+
+     <!-- deepseek -->
+    <div class="trending">
+        <h1 id="trending">Trending Now</h1>
+        <div class="slides">
+            <button class="previous"><i class="fa-solid fa-angle-left"></i></button>
+            
+            <div class="cards">
+                <!-- Cards will be dynamically inserted here by JavaScript -->
+            </div>
+            
+            <button class="forward"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    
+
+
+        <div class="topUp">
+            <h1 id="head">A Plan To Suit Your Needs</h1>
+            <div class="CARDS">
+                <div class="card">
+                    <h1>Mobile</h1>
+                    <h2 class="resoltion">480p</h2>
+                    <div class="h3">
+                        <h3><i class="fa-solid fa-check"></i>
+                            Fair video quality</h3>
+                            <h3><i class="fa-solid fa-check"></i>For your Phone and tablet</h3>
+                    </div>
+                    <h1 class="rs">RS 250/mo</h1>
+                </div>
+                <div class="card">
+                    <h1>Basic</h1>
+                    <h2 class="resoltion">720p</h2>
+                    <div class="h3">
+                        <h3><i class="fa-solid fa-check"></i>
+                            very good video quality</h3>
+                            <h3><i class="fa-solid fa-check"></i>For your phone&TV</h3>
+                    </div>
+                    <h1 class="rs">RS 450/mo</h1>
+                </div>
+                <div class="card standard">
+                    <h1>Standard</h1>
+                    <h2 class="resoltion">1080p</h2>
+                    <div class="h3">
+                        <h3><i class="fa-solid fa-check"></i>
+                            Great video quality</h3>
+                            <h3><i class="fa-solid fa-check"></i>For your Phone and tablet</h3>
+                    </div>
+                    <h1 class="rs">RS 800/mo</h1>
+                </div>
+                <div class="card premium">
+                    <h1>Premium</h1>
+                    <h2 class="resoltion">4K + HDR</h2>
+                    <div class="h3">
+                        <h3><i class="fa-solid fa-check"></i>
+                            Best video,Top sound</h3>
+                            <h3><i class="fa-solid fa-check"></i>For your Phone & tablet</h3>
+                    </div>
+                    <h1 class="rs">RS 1100/mo</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="topUp">
+            <h1 id="head">More Reasons to Join</h1>
+            <div class="CARDS">
+                <div class="card " id="join">
+                    <h1>Enjoy on your TV</h1>
+                    <div class="h3" id="h3">
+                        <h3>Watch on Smart TV's,Playstation
+                            ,Xbox,Chromecast,
+                            AppleTV,Blu-ray players,  and more.</h3>     
+                    </div>
+                </div>
+                <div class="card" id="join">
+                    <h1>Download your shows to watch offline</h1>
+                    <div class="h3">
+                        <h3>Save your favorites easily and always have something to watch.</h3>
+                    </div>
+                </div>
+                <div class="card standard" id="join">
+                    <h1>Watch everywhere</h1>
+                    <div class="h3">
+                        <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+                    </div>
+                </div>
+                <div class="card premium" id="join">
+                    <h1>Create profiles for kids</h1>
+                    <div class="h3">
+                        <h3>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- <div class="question">
+        <h1>Frequently Asked Questions</h1>
+        <div class="questions">
+        <div class="q1">
+            <h2>What is Netflix?</h2>
+            <i class="fa-solid fa-plus"></i>
+            
+        </div>
+        <div class="q1">
+            <h2>How much does Netflix cost?</h2>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="q1">
+            <h2>Where I can watch Netflix?</h2>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="q1">
+            <h2>How do I Cancel?</h2>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="q1">
+            <h2>What Can I Watch on Netflix?</h2>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="q1">
+            <h2>I Netflix good for Childeren?</h2>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+    </div>     -->
+        
+    <!-- gemini code -->
+    <div class="question">
+        <h1>Frequently Asked Questions</h1>
+        <div class="questions">
+            <div class="faq-item">
+                <div class="q1">
+                    <h2>What is Netflix?</h2>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="q1">
+                    <h2>How much does Netflix cost?</h2>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer">
+                    <p>Netflix offers different subscription plans with varying prices and features. Please visit the Netflix website for the most up-to-date pricing information in your region.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="q1">
+                    <h2>Where I can watch Netflix?</h2>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer">
+                    <p>You can watch Netflix on a wide range of devices, including smart TVs, smartphones, tablets, computers, streaming media players, and game consoles.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="q1">
+                    <h2>How do I Cancel?</h2>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer">
+                    <p>You can easily cancel your Netflix subscription at any time online. Simply log in to your account on the Netflix website and follow the cancellation instructions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="q1">
+                    <h2>What Can I Watch on Netflix?</h2>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer">
+                    <p>Netflix has a vast library of content, including original series, movies, documentaries, licensed TV shows, and films across various genres.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="q1">
+                    <h2>I Netflix good for Children?</h2>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer">
+                    <p>Netflix offers a dedicated "Kids" profile with content suitable for children. Parental controls are also available to manage what children can watch.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <div class="suggestion">
+            <h1 class="sug">Ready to watch? Enter your email to create or restart your membership.</h1>
+            <div class="search-btn">
+                <input type="text" placeholder="Email Address">
+                <button>Get Started ></button>
+            </div>
+        </div>
+        
+        <div class="about">
+            <a href="#">Questions?Contact Us</a>
+           <div class="about-content">
+            <div class="line1">
+                <a href="#">FAQ</a>
+                <a href="#">Media Centers</a>
+                <a href="#">How to Watch?</a>
+                <a href="#">Cookie Preference</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="line1">
+                <a href="#">Help Center</a>
+                <a href="#">Investor Relation</a>
+                <a href="#">Terms and uses</a>
+                <a href="#">Corporate usage</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="line1">
+                <a href="#">Account</a>
+                <a href="#">Jobs</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+           </div>
+           <select id="platform" name="platform">
+             <option value="English">English</option>
+           </select>
+           <h1>Netflix Pakistan</h1>
+           
+          
+          
+        </div>
+        
+    </div>
+        
+    </div>
+
+
+    
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
